@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(21, 124, 124);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .full-screen {
+    width: 100%;
+    min-height: 100vh;
+    
+} */
+.todo {
+    width: 90%;
+    height: auto;
+    margin-top: 5rem;
+    background-color: #fff;
+    padding: 10px 20px 30px;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+
+}
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem;
+    color:  rgb(8, 113, 113);
+    margin: 10px 10px 20px;
+}
+h2 img {
+    height: 60px;
+    width: 60px;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center;
+}
+.input-txt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #dadada;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 20px 30px;
+    border: none;
+    outline: none;
+}
+#add-btn {
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    /* text-align: center; */
+    border: none;
+    outline: none;
+    background-color:red;
+    color: rgb(8, 113, 113);
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+#add-btn:hover {
+    background-color: red;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.lists {
+    margin: 20px 10px;
+   
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    
+    user-select: none;
+    padding: 13px 48px;
+    /* width: 100%; */
+    cursor: pointer;
+    position: relative;
+    
+}
+
+ul li::before {
+    content: ' ';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.webp);
+    background-size: cover;
+    background-position: center;
+    top: 9px;
+    left: 7px;
+    
+}
+ul li.checked {
+    text-decoration: line-through;
+    color: #555;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.webp);
+    
+}
+
+ul li span {
+    position: absolute;
+    right: 10%;
+    top: 5px;
+}
+ ul li span img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+ }
+ ul li span img:hover {
+    border: 2px solid #dadada;
+ }
+
+ .footer {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    background-color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    color:  rgb(8, 113, 113);
+    font-weight: 600;
+ }
+ .footer i {
+    color: rgb(224, 92, 92)
+ }
+
